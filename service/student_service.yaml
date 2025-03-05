@@ -38,8 +38,8 @@ spec:
       - env:
         - name: MONGO_URI
           value: mongodb://mongo:27017
-        image: nginx
-        name: cloud-tuto
+        image: cloud-tuto/student_service
+        name: service
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
